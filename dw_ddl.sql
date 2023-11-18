@@ -990,3 +990,35 @@ AS
 SELECT "OrderNumber", "LineNumber", "Model"
 FROM "vDMPrep"
 WHERE ("FiscalYear" = '2013');
+
+
+\copy "DimAccount"                                           FROM './dbo_DimAccount_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "DimCurrency"                                          FROM './dbo_DimCurrency_202309251159.csv' DELIMITER E',' CSV HEADER;
+
+\copy "DimSalesTerritory"                                    FROM './dbo_DimSalesTerritory_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "DimGeography"                                         FROM './dbo_DimGeography_202309251159.csv' DELIMITER E',' CSV HEADER;
+
+\copy "DimCustomer"                                          FROM './dbo_DimCustomer_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "DimDate"                                              FROM './dbo_DimDate_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "DimDepartmentGroup"                                   FROM './dbo_DimDepartmentGroup_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "DimEmployee"                                          FROM './dbo_DimEmployee_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "DimOrganization"                                      FROM './dbo_DimOrganization_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "DimProduct"                                           FROM './dbo_DimProduct_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "DimProductCategory"                                   FROM './dbo_DimProductCategory_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "DimProductSubcategory"                                FROM './dbo_DimProductSubcategory_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "DimPromotion"                                         FROM './dbo_DimPromotion_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "DimReseller"                                          FROM './dbo_DimReseller_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "DimSalesReason"                                       FROM './dbo_DimSalesReason_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "DimScenario"                                          FROM './dbo_DimScenario_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "FactAdditionalInternationalProductDescription"        FROM './dbo_FactAdditionalInternationalProductDescription_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "FactCallCenter"                                       FROM './dbo_FactCallCenter_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "FactCurrencyRate"                                     FROM './dbo_FactCurrencyRate_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "FactFinance"                                          FROM './dbo_FactFinance_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "FactInternetSales"                                    FROM './dbo_FactInternetSales_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "FactInternetSalesReason"                              FROM './dbo_FactInternetSalesReason_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "FactProductInventory"                                 FROM './dbo_FactProductInventory_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "FactResellerSales"                                    FROM './dbo_FactResellerSales_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "FactSalesQuota"                                       FROM './dbo_FactSalesQuota_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "FactSurveyResponse"                                   FROM './dbo_FactSurveyResponse_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "NewFactCurrencyRate"                                  FROM './dbo_NewFactCurrencyRate_202309251159.csv' DELIMITER E',' CSV HEADER;
+\copy "ProspectiveBuyer"                                     FROM './dbo_ProspectiveBuyer_202309251159.csv' DELIMITER E',' CSV HEADER;
